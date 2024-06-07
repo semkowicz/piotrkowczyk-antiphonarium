@@ -1,0 +1,36 @@
+% !TEX program = LuaLaTeX+se
+
+\documentclass[12pt,a5paper]{article}
+
+% Load packages:
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[osf,p]{libertine} % set font
+\usepackage{gregoriotex} % enable Gregorio score inclusion
+\usepackage[latin]{babel} % set language
+\usepackage{titlesec}
+
+\titleformat*{\section}{\centering\Large\color{red}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+% Set the space around the initial:
+% See http://gregorio-project.github.io/gregoriotex/details.html for more details and options
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+
+% Set the initial font (change 43 for a larger size):
+\grechangestyle{initial}{\fontsize{43}{43}\selectfont}%
+
+% Make staff lines red; remove for black:
+\gresetlinecolor{gregoriocolor}
+
+%===============================================================================
+
+\begin{document}
+
+\section{In Nativitate S. Ioannis Baptistae.}
+
+\begin{center}\color{red}
+Ad Vesperas Antiphona.
+\end{center}
+
+\end{document}
