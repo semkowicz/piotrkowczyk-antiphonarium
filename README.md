@@ -11,6 +11,5 @@ drukarską Andrzeja Piotrkowczyka.
 ## Kompilacja do pliku PDF
 
 ```shell
-mkdir build
-lualatex --output-dir build antiphonarium.tex
+latexmk
 ```
